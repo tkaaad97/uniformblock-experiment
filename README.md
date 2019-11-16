@@ -1,6 +1,6 @@
 # uniformblock-experiment
 
-|uniform type|offset|byte size|array stride|matrix stride|matrix order|
+|uniform type|alignment|byte size|array stride|matrix stride|matrix order|
 |:-----------|-----:|--------:|-----------:|------------:|:----------:|
 |bvec2|8|8||||
 |bvec3|16|12||||
@@ -11,6 +11,9 @@
 |ivec2|8|8||||
 |ivec3|16|12||||
 |ivec4|16|16||||
+|uvec2|8|8||||
+|uvec3|16|12||||
+|uvec4|16|16||||
 |dvec2|16|16||||
 |dvec3|32|24||||
 |dvec4|32|32||||
