@@ -24,7 +24,7 @@ main = withWindow 400 300 "test" go f
         results <- mapM (investigateUniformBlock "") uniformTypes
         rowmatResults <- mapM (investigateUniformBlock "layout(row_major) uniform;") matrixUniformTypes
         colmatResults <- mapM (investigateUniformBlock "layout(column_major) uniform;") matrixUniformTypes
-        putStrLn "|uniform type|offset|byte size|array stride|matrix stride|matrix order|"
+        putStrLn "|uniform type|alignment|byte size|array stride|matrix stride|matrix order|"
         putStrLn "|:-----------|-----:|--------:|-----------:|------------:|:----------:|"
         mapM printResult (results ++ rowmatResults ++ colmatResults)
     f _ _ = return ()
